@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_12sdp">
+
+    <TextView
+        android:id="@+id/tv_from_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_chat_oi"
+        android:fontFamily="@font/montserrat"
+        android:maxWidth="@dimen/_200sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/textview"
+        android:textColor="#000000"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toEndOf="@+id/iv_profile_chat1"
+        app:layout_constraintTop_toTopOf="@+id/iv_profile_chat1"
+        tools:text="lorem ipsum wakjdn apa si ya kamu lagi ngapain beb, kok aku ga dikasih kabar ;(" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile_chat1"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_time_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_format"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_from_row"
+        app:layout_constraintStart_toEndOf="@+id/tv_from_row" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

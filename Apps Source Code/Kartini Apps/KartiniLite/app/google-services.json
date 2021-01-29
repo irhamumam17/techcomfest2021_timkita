@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "505298731823",
+    "firebase_url": "https://kartini-lite.firebaseio.com",
+    "project_id": "kartini-lite",
+    "storage_bucket": "kartini-lite.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505298731823:android:be933c49d52377e4f197da",
+        "android_client_info": {
+          "package_name": "com.ibnadm.kartinilite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505298731823-i14f6pau7eh92qsmrvd9lie7441eqkdn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibnadm.kartinilite",
+            "certificate_hash": "e6d6264acf9518c85bebcb2e8f58a599f048b967"
+          }
+        },
+        {
+          "client_id": "505298731823-ikh5jsgvememoa7315h4hufc5bvdimng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiXrFfDb_rMR4R8uYxRC8bFmg9pIrSSRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505298731823-ikh5jsgvememoa7315h4hufc5bvdimng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

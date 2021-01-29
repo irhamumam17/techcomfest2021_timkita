@@ -1,0 +1,2 @@
+rootProject.name='Kartini Lite'
+include ':app'

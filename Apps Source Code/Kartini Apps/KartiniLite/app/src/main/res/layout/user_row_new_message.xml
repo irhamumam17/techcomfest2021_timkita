@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile_newmsg"
+        android:layout_width="@dimen/_64sdp"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_marginStart="@dimen/space_x2"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@color/colorPrimary"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="0dp"
+        android:layout_marginVertical="@dimen/space_half"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name_newmsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/name"
+        android:textColor="#000000"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_profile_newmsg"
+        app:layout_constraintTop_toTopOf="@+id/iv_profile_newmsg"
+        app:layout_constraintVertical_bias="0.489" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_alter"
+    tools:context=".activities.DetailReportActivity">
+
+    <TextView
+        android:id="@+id/tv_report_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/report1"
+        android:textColor="#000000"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintStart_toStartOf="@+id/btn_backtoreport"
+        app:layout_constraintTop_toBottomOf="@+id/btn_backtoreport" />
+
+    <Button
+        android:id="@+id/btn_backtoreport"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_keyboard_backspace_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_bg"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_date_accept"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_accept">
+
+        <TextView
+            android:id="@+id/tv_state_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#03EE61"
+            android:fontFamily="@font/montserrat_bold"
+            android:foregroundTint="#788A6B"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="@string/menunggu"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_notif_status"
+            tools:ignore="MissingConstraints"
+            tools:text="Disetujui" />
+
+        <TextView
+            android:id="@+id/tv_notif_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disetujui_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioButton
+        android:id="@+id/rb_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_report_detail_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_report_detail_title" />
+
+    <TextView
+        android:id="@+id/tv_date_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/date_progress"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_accept"
+        app:layout_constraintStart_toEndOf="@+id/rb_accept"
+        app:layout_constraintTop_toTopOf="@+id/rb_accept" />
+
+    <TextView
+        android:id="@+id/tv_date_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/date_progress"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_review"
+        app:layout_constraintStart_toEndOf="@+id/rb_review"
+        app:layout_constraintTop_toTopOf="@+id/rb_review" />
+
+    <RadioButton
+        android:id="@+id/rb_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/rb_accept"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_review"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_bg"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_date_review"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_review">
+
+        <TextView
+            android:id="@+id/tv_state_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FF00A1"
+            android:fontFamily="@font/montserrat_bold"
+            android:foregroundTint="#788A6B"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="@string/menunggu"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintStart_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/textView27"
+            tools:ignore="MissingConstraints"
+            tools:text="Dalam Review" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/direview_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_date_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/date_progress"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_deliver"
+        app:layout_constraintStart_toEndOf="@+id/rb_deliver"
+        app:layout_constraintTop_toTopOf="@+id/rb_deliver" />
+
+    <RadioButton
+        android:id="@+id/rb_deliver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/rb_review"
+        app:layout_constraintTop_toBottomOf="@+id/cl_review" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_deliver"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_bg"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_date_sent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_sent">
+
+        <TextView
+            android:id="@+id/tv_state_deliver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FF00A1"
+            android:fontFamily="@font/montserrat_bold"
+            android:foregroundTint="#788A6B"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="@string/menunggu"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            tools:ignore="MissingConstraints"
+            tools:text="@string/sent" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sent_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_date_submited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/date_progress"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_sent"
+        app:layout_constraintStart_toEndOf="@+id/rb_sent"
+        app:layout_constraintTop_toTopOf="@+id/rb_sent" />
+
+    <RadioButton
+        android:id="@+id/rb_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/rb_deliver"
+        app:layout_constraintTop_toBottomOf="@+id/cl_deliver" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_sent"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_bg"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_date_submited"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_submited">
+
+        <TextView
+            android:id="@+id/tv_state_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#0019FF"
+            android:fontFamily="@font/montserrat_bold"
+            android:foregroundTint="#788A6B"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="@string/menunggu"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"
+            tools:text="Diserahkan" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submited_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

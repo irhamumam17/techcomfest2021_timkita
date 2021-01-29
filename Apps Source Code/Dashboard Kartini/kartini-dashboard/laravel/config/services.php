@@ -1,0 +1,45 @@
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Third Party Services
+    |--------------------------------------------------------------------------
+    |
+    | This file is for storing the credentials for third party services such
+    | as Mailgun, Postmark, AWS and more. This file provides the de facto
+    | location for this type of information, allowing packages to have
+    | a conventional file to locate the various service credentials.
+    |
+    */
+
+    'mailgun' => [
+        'domain' => env('MAILGUN_DOMAIN'),
+        'secret' => env('MAILGUN_SECRET'),
+        'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
+    ],
+
+    'postmark' => [
+        'token' => env('POSTMARK_TOKEN'),
+    ],
+
+    'ses' => [
+        'key' => env('AWS_ACCESS_KEY_ID'),
+        'secret' => env('AWS_SECRET_ACCESS_KEY'),
+        'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
+    ],
+    'firebase'=>[
+            "type" => "service_account",
+            "project_id" => "kartini-lite",
+            "private_key_id" => "14e9a34443382b293c2b7f6deac067672c2619fe",
+            "private_key" => "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC6dqdq47BBj5su\nf/fJvBPp63WzQZ8ElYTp1SoD3fIUKHvZ6qGga0Bw9uRet++EKXChqNjWLYgE8grT\nvhKExFhLF/Yo6g7kSJf4NTVCj0TtJB5zEdGcJqbrlg4rX2KHMHAsp8WsfbxGCnBx\naQxj8Lx0jCjgADo9Xa8Nj70uGwVUpHteZHNG67W/4aKAZwVfq+PmDFzpi6x0gtYx\nBejlspwcLW1gBlHEo2Dozr1LqVJQhb43cmKDvSZPYqlzM/T9pbVo4XdRMDMLvM+K\nK3T2FRn45vcVCjDtrrocBXyH66MuaEI6MoISi0kGST6LOKxm8oz1tKvV2mPaAmBy\n0vNLI8zJAgMBAAECggEADcNzYSb0XCqC/GAyxJ/O4n3gXr5xw+9bc70p0EZCN62z\nUqcIjiRMieoXekxecCV07GHfu5N5zk+lb/LAQC+UCtr2bxezyLL5ELewujyEDHMV\nkk3W6I1L1ejqG9Z7Gdp/9TPfGfff/VWI7j4gTYI4DuxHmh06L0xqfvhEsRIKhzBK\nj+qiJdzfY6n04l4zAe/kFes9kCsW7D4sdC6f19eWcJpD59ZhyFzlkO6MetLooTS8\nvKEzA9rbSPfjXNkQUURvK6OKPv4ZhCyXHx5NNk7tYvuMHOg1ZH9sFx+CnpjMDdsy\n+Nby4myV4ZBxxQD7/cMXD6pGWBOqwvCG1w8RsizPgQKBgQDujpOa8rinkncfhw56\n4rXgXL3UhSy96X3k+ZfgrYtZQIo00QcwS08/G6Evv1KWapVA4B+Ezt0faalqUylM\nI36tMxwblwZ9pbRy7IkA7I8znqyrpUbUmCon4zmqjrJuCodrJcNH8D3uDxrIcwFF\nYLqMijLqmcrhZGzUSrM2rizRIQKBgQDIGPea/rTNN1+HN4W29chQ992aSKjAD9ES\nAg5TPC3O7UaIAyrBwV6dKrUw+LmC7IIuXX4DugPfbappV75krH7oqnmA9GIKlcmH\nvAPBZngu6Q/f042UBXW49PKSOdENoJjaCpGxSjSSmle/ZDIp44aEhV3tdQB2Y0/B\n/4oKEy/+qQKBgQDgZMC3SYUkKwNeZp3aPZKzHsl5NGPnp9BCJ/0S3GttYuYd1Fkc\ntloulIDD9wVqc4s9YRSEykj5GVzApMT91416wc64rRDv84SPbatZcSsqdSEau/aq\nVw+gQX6mzl9MXx8OTJEqA/NdEFwzHOqfJeOT+xL11gAej2ZHMpTs5F1HwQKBgQCR\nkHgwLTLiR3IbL+z6WHrNTEPNxSXd8qOpcg1xx8mbS0mQEJ2+LiniM/t0EL0D3YIm\nsKTHmT7P/zuFPuum2UXJhJq3kRDxml3tfH1O6Hhtx+ZgccoA8KffUXJVpfHK9BW+\nKQor60uritRiy0Ui6/4j0dGuuPsJJN4Uxw1onuS/YQKBgCKIBuEQgolIHwKnb62i\nZxOgv8z6hF2QL9Z48hNUjMObTrcvUFzHt571qlNIWR1olwHe5OhPRONV6B3fUIKM\nmxfycvaoyddukxQ06ncv78PdsI7N+AboJ7E+XAk3kQb+/QC/gi6XdNbbM0yFtBPj\nEbJHQurrmPDNB8JWvlHWcrH+\n-----END PRIVATE KEY-----\n",
+            "client_email" => "firebase-adminsdk-xwj5y@kartini-lite.iam.gserviceaccount.com",
+            "client_id" => "112706049283311517035",
+            "auth_uri" => "https://accounts.google.com/o/oauth2/auth",
+            "token_uri" => "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url" => "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url" => "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xwj5y%40kartini-lite.iam.gserviceaccount.com"
+    ]
+
+];
